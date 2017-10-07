@@ -21,7 +21,7 @@ class BookShelfs extends Component {
       },
       {
         type: 'wantToRead',
-        title: 'Currently Reading',
+        title: 'Want to Read',
         id: 'shelf2'
       },
       {
