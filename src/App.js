@@ -7,20 +7,19 @@ import './App.css';
 
 class BooksApp extends React.Component {
   state = {
-    books: [],
-    showSearchPage: false
+    books: []
   };
   componentDidMount() {
     BooksAPI.getAll().then(books => {
       this.setState({books});
     });
   }
-
   changeBookShelf = (book, newBookShelf) => {
     BooksAPI.update(book, newBookShelf).then(() => {
       this.setState(state => ({
         books: this.state.books.filter(b => b.id !== book.id).concat([book])
       }));
+      console.log(this.state.books);
     });
   };
   render() {
