@@ -21,7 +21,7 @@ class Book extends Component {
     const {book} = this.props;
     const coverImg =
       book.imageLinks && book.imageLinks.thumbnail
-        ? book.imageLinks.thumbnail
+        ? book.imageLinks.thumbnail.replace('http://','//')
         : noImg;
     const title = book.title || 'Book Title is missing';
     return (
