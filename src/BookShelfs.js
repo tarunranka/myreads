@@ -52,7 +52,7 @@ class BookShelfs extends Component {
             )}
           </div>
           <div className="open-search">
-            <Link to="/search">Add a book</Link>
+            <Link to={`${process.env.PUBLIC_URL}/search`}>Add a book</Link>
           </div>
         </div>
       </div>
