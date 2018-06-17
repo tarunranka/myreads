@@ -36,7 +36,7 @@ class BooksApp extends React.Component {
           )}
         />
         <Route
-          path={`${process.env.PUBLIC_URL}/search`}
+          path="/search"
           render={() => (
             <SearchBar
               books={this.state.books}
