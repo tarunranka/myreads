@@ -2,7 +2,7 @@
   "name": "Myread",
   "version": "0.0.1",
   "private": true,
-  "homepage": "http://tarunranka.github.io/myreads",
+  "homepage": "https://tarunranka.github.io/myreads/",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "prop-types": "^15.5.8",
